@@ -87,7 +87,7 @@ for x in list_cells:
 		msg.attach(MIMEText(html, 'html'))
 		server = smtplib.SMTP('smtp.gmail.com', 587)
 		server.starttls()
-		server.login(fromaddr, "MaisonMontrealArnoul!")
+		server.login(fromaddr, "#")
 		text = msg.as_string()
 		server.sendmail(fromaddr, toaddr, text)
 		server.quit()
